@@ -6,5 +6,36 @@
 
 #map {
     width: 100%;
-    height: 60vh;
+    height: 30rem;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+button {
+    margin: 10px;
+    padding: 4px;
+    border: 1px solid white;
+    box-shadow: rgba(226, 221, 221, 0.954) 0px 1px 10px;
+    color: white;
+}
+
+button:hover {
+    border: 1px solid red;
+    color: red;
+    box-shadow: red 0px 1px 10px;
+    background-color: rgb(20, 20, 20, 0.5);
+}
+
+.botones {
+    height: auto;
+    display: flex;
+    overflow: scroll;
+    // background-color: aquamarine;
+}
+
+.centrar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

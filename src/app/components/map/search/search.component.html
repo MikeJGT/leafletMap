@@ -1,12 +1,15 @@
-<p>search works!</p>
-<button (click)="relieve()">Relieve</button>
-<button (click)="carreteras()">Calles</button>
-<button (click)="senderismo()">Senderismo</button>
-<button (click)="bici()">Bici</button>
+<div class="centrar">
+    <div class="botones">
+        <button (click)="this.leafletSV.relieve().addTo(this.map)" class="btn ">Mapa Relieve</button>
+        <button (click)="this.leafletSV.carreteras().addTo(this.map)" class="btn">Mapa Calles</button>
+        <button (click)="this.leafletSV.senderismo().addTo(this.map)" class="btn">Rutas Senderismo</button>
+        <button (click)="this.leafletSV.bici().addTo(this.map)" class="btn">Rutas Bici</button>
 
-<button (click)="quitarMarcador()">Quitar Marcador</button>
-<button (click)="calculaRuta()">Calcular Ruta</button>
-<button (click)="borrarRutas()">Borrar Ruta</button>
+        <button (click)="quitarMarcador()" class="btn">Quitar Marcador</button>
+        <button (click)="calculaRuta()" class="btn">Calcular Ruta</button>
+        <button (click)="borrarRutas()" class="btn">Borrar Ruta</button>
+    </div>
+</div>
 
 <div id="map">
 

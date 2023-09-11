@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: white 0px 1px 10px;
+    color: white;
+    border: 1px solid white;
+    position: fixed;
+    bottom: 0;
+}

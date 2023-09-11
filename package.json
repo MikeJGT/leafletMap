@@ -22,6 +22,7 @@
     "@asymmetrik/ngx-leaflet-markercluster": "^16.0.0",
     "@types/leaflet-routing-machine": "^3.2.5",
     "@types/leaflet.markercluster": "^1.5.2",
+    "bootstrap": "^5.3.1",
     "graphhopper-js-api-client": "^5.0.2",
     "leaflet": "^1.9.4",
     "leaflet-control-geocoder": "^2.4.0",
