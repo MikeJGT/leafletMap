@@ -1,8 +1,4 @@
 import { Component } from '@angular/core';
-import * as L from 'leaflet';
-import 'leaflet-control-geocoder';
-import 'leaflet.markercluster';
-import 'leaflet-routing-machine';
 import { LeafletServiceService } from '../../../services/leaflet-service.service';
 
 @Component({
@@ -27,10 +23,10 @@ export class SearchComponent {
 
 
   ngOnInit() {
-    this.map = L.map('map').setView([42.161, -8.619], 13);
+    this.map = this.leafletSV.L.map('map').setView([42.161, -8.619], 13);
     this.leafletSV.defaultTil().addTo(this.map);
 
-    (L.Control as any).geocoder({
+    (this.leafletSV.L.Control as any).geocoder({
       defaultMarkGeocode: false
     })
       .on('markgeocode', (e: {
@@ -46,9 +42,9 @@ export class SearchComponent {
   }
 
   ponerMarcador() {
-    L.Marker.prototype.options.icon =
-      L.icon({
-        ...L.Icon.Default.prototype.options,
+    this.leafletSV.L.Marker.prototype.options.icon =
+      this.leafletSV.L.icon({
+        ...this.leafletSV.L.Icon.Default.prototype.options,
         iconUrl: 'assets/marker-icon.png',
         iconRetinaUrl: 'assets/marker-icon-2x.png',
         shadowUrl: 'assets/marker-shadow.png'
@@ -61,9 +57,9 @@ export class SearchComponent {
       let lon = e.latlng.lng;
       this.coord.push([lat, lon]);
 
-      this.marker = L.marker([lat, lon], {
-        icon: L.icon({
-          ...L.Icon.Default.prototype.options,
+      this.marker = this.leafletSV.L.marker([lat, lon], {
+        icon: this.leafletSV.L.icon({
+          ...this.leafletSV.L.Icon.Default.prototype.options,
           iconUrl: 'assets/marker-icon.png',
           iconRetinaUrl: 'assets/marker-icon-2x.png',
           shadowUrl: 'assets/marker-shadow.png'
@@ -93,7 +89,7 @@ export class SearchComponent {
   }
 
   calculaRuta() {
-    this.ruta = L.Routing.control({
+    this.ruta = this.leafletSV.L.Routing.control({
       waypoints: this.coord
     }).addTo(this.map);
 
