@@ -6,13 +6,13 @@
 
 #map {
     width: 100%;
-    height: 30rem;
+    height: 60%;
     border-radius: 5px;
     overflow: hidden;
 }
 
 button {
-    margin: 10px;
+    margin: 5px;
     padding: 4px;
     border: 1px solid white;
     box-shadow: rgba(226, 221, 221, 0.954) 0px 1px 10px;
@@ -20,15 +20,15 @@ button {
 }
 
 button:hover {
-    border: 1px solid red;
-    color: red;
-    box-shadow: red 0px 1px 10px;
-    background-color: rgb(20, 20, 20, 0.5);
+    border: 1px solid white;
+    box-shadow: rgba(226, 221, 221, 0.954) 0px 1px 10px;
+    color: white;
 }
 
 .botones {
     height: auto;
     display: flex;
+    //flex-wrap: wrap;
     overflow: scroll;
     // background-color: aquamarine;
 }
@@ -38,4 +38,5 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2vh;
 }
