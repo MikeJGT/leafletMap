@@ -1,5 +1,6 @@
-<div class="centrar">
-    <div class="botones">
+<div class="centrar" id="container">
+    <i [ngStyle]="this.show" class="fa-solid fa-angle-left fa-2xl" (click)="moveLeft()"></i>
+    <div class="botones" id="botones">
         <button (click)="this.leafletSV.relieve().addTo(this.map)" class="btn ">Mapa Relieve</button>
         <button (click)="this.leafletSV.carreteras().addTo(this.map)" class="btn">Mapa Calles</button>
         <button (click)="this.leafletSV.senderismo().addTo(this.map)" class="btn">Rutas Senderismo</button>
@@ -9,8 +10,10 @@
         <button (click)="calculaRuta()" class="btn">Calcular Ruta</button>
         <button (click)="borrarRutas()" class="btn">Borrar Ruta</button>
     </div>
+    <i [ngStyle]="this.show2" class="fa-solid fa-chevron-right fa-2xl" (click)="moveRight()"></i>
 </div>
+<div class="centerMap">
+    <div id="map">
 
-<div id="map">
-
+    </div>
 </div>

@@ -15,10 +15,18 @@ export class SearchComponent {
   ruta: any;
   rutas: any;
 
+  mostrar: boolean;
+  show: any;
+  show2: any;
+
   constructor(public leafletSV: LeafletServiceService) {
     this.markers = [];
     this.coord = [];
     this.rutas = [];
+    this.mostrar = false;
+    this.show = {
+      opacity: 0
+    }
   }
 
 
@@ -95,5 +103,45 @@ export class SearchComponent {
 
     this.rutas.push(this.ruta);
     this.quitarMarcador();
+  }
+
+  moveLeft() {
+    let width = document.getElementById('botones');
+    console.log('Izq', width?.scrollLeft, width?.scrollWidth! - width?.offsetWidth!);
+    let size = width?.scrollWidth! - width?.offsetWidth!;
+    //let container = document.getElementById('container');
+    width!.scrollLeft = -size;
+    //console.log('Izq', width?.offsetLeft)
+    // width!.scrollTo({ left: size })
+    // width!.scrollTo({  })
+    this.mostrar = !this.mostrar;
+    this.opac();
+  }
+  moveRight() {
+    let width = document.getElementById('botones');
+    console.log('Der', width?.scrollLeft, width?.scrollWidth! - width?.offsetWidth!);
+    let size = width?.scrollWidth! - width?.offsetWidth!;
+    //let container = document.getElementById('container');
+    width!.scrollLeft = size;
+    //console.log('Der', width?.offsetLeft)
+    this.mostrar = !this.mostrar;
+    this.opac();
+  }
+  opac() {
+    if (this.mostrar) {
+      this.show = {
+        opacity: 1
+      }
+      this.show2 = {
+        opacity: 0
+      }
+    } else {
+      this.show = {
+        opacity: 0
+      }
+      this.show2 = {
+        opacity: 1
+      }
+    }
   }
 }
