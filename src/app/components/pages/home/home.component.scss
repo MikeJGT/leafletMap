@@ -5,7 +5,7 @@
     background-image: radial-gradient(circle at center center, rgba(33, 33, 33, 0), rgb(0, 0, 0)), repeating-linear-gradient(135deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 1px, transparent 1px, transparent 4px), repeating-linear-gradient(45deg, rgb(56, 56, 56) 0px, rgb(56, 56, 56) 5px, transparent 5px, transparent 6px), linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
     background-repeat: no-repeat;
     background-size: cover;
-
+    position: relative;
 }
 
 .container {
@@ -13,9 +13,21 @@
     height: auto;
 }
 
+.foot {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
 
 @media (max-width:480px) {
     .container {
         width: 100%;
+    }
+}
+
+@media (max-height:650px) {
+    .wrapper {
+        height: 650px;
     }
 }
