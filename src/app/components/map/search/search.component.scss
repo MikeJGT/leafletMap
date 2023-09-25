@@ -51,6 +51,10 @@ button:hover {
     // background-color: aquamarine;
 }
 
+.botones::-webkit-scrollbar {
+    display: none;
+}
+
 .centrar {
     width: 100%;
     display: flex;
