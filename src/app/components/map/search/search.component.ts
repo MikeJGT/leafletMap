@@ -109,11 +109,7 @@ export class SearchComponent {
     let width = document.getElementById('botones');
     console.log('Izq', width?.scrollLeft, width?.scrollWidth! - width?.offsetWidth!);
     let size = width?.scrollWidth! - width?.offsetWidth!;
-    //let container = document.getElementById('container');
     width!.scrollLeft = -size;
-    //console.log('Izq', width?.offsetLeft)
-    // width!.scrollTo({ left: size })
-    // width!.scrollTo({  })
     this.mostrar = !this.mostrar;
     this.opac();
   }
@@ -121,9 +117,7 @@ export class SearchComponent {
     let width = document.getElementById('botones');
     console.log('Der', width?.scrollLeft, width?.scrollWidth! - width?.offsetWidth!);
     let size = width?.scrollWidth! - width?.offsetWidth!;
-    //let container = document.getElementById('container');
     width!.scrollLeft = size;
-    //console.log('Der', width?.offsetLeft)
     this.mostrar = !this.mostrar;
     this.opac();
   }
