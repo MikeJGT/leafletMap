@@ -45,11 +45,9 @@ button:hover {
     height: auto;
     display: flex;
     align-items: center;
-    //flex-wrap: wrap;
     overflow-x: scroll;
     scrollbar-width: none;
     scroll-behavior: smooth;
-    // background-color: aquamarine;
 }
 
 .botones::-webkit-scrollbar {
