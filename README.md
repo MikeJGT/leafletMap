@@ -1,27 +1,32 @@
-# LeafletMap
+# Leaflet Map
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+Leaflet Map es un proyecto personal que usa la librería de software libre [Leaflet](https://leafletjs.com/), aquí podrás acceder a los mapas de distintas regiones de forma sencilla e interactiva.
 
-## Development server
+## ¿Cómo puedo usar Leaflet Map?
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Dependencias
+Para usar este proyecto necesitas tener instalado [NodeJS](https://nodejs.org/en) y [Angular](https://angular.io/).
 
-## Code scaffolding
+### Insatlación del proyecto
+Puedes descargarte el código de este proyecto en la pestaña "code" que está arriba o darle a fork si ya tienes una cuenta de github.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Una vez obtenido el código, abre la carpeta en la terminal y escribe:
 
-## Build
+```
+npm install
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+ng serve -o
+```
+## Funcionalidades
+Leaflet Map te permite realizar las siguientes funciones.
 
-## Running unit tests
+### Búsqueda de destinos
+Realiza la búsqueda de destinos en diferentes aumentos y marca los puntos de interés que quieras tomar como referencia.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+### Cálculo de rutas
+Calcular la ruta más óptima entre los diferentes marcadores que incorpores en el mapa.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Información por capas
+Obtener información acerca de las rutas de senderismo, carriles bici y del relieve geográfico de una determinada zona. 
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
