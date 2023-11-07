@@ -7,7 +7,7 @@ Leaflet Map es un proyecto personal que usa la librería de software libre [Leaf
 ### Dependencias
 Para usar este proyecto necesitas tener instalado [NodeJS](https://nodejs.org/en) y [Angular](https://angular.io/).
 
-### Insatlación del proyecto
+### Instalación del proyecto
 Puedes descargarte el código de este proyecto en la pestaña "code" que está arriba o darle a fork si ya tienes una cuenta de github.
 
 Una vez obtenido el código, abre la carpeta en la terminal y escribe:
